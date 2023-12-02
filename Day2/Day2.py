@@ -1,4 +1,3 @@
-import re
 finalCount = 0
 file = open("input.txt")
 
@@ -41,5 +40,6 @@ for line in file:
         finalCount += int(gameCount)
     else:
         print(gameCount, "is not valid")
+
 print("finalCount:", finalCount)
     

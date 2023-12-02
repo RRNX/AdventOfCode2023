@@ -8,9 +8,9 @@ for line in file:
     currentMax = 0
     currentMin = 100
     for elementLiteral in literalNumbers:
-        test = [m.start() for m in re.finditer(elementLiteral, line)]
-        if test:
-            for i in test:
+        found = [m.start() for m in re.finditer(elementLiteral, line)]
+        if found:
+            for i in found:
                 #print(i)
                 if currentMin > i:
                     currentMin = i

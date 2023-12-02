@@ -20,3 +20,5 @@ Feeling a bit more confident in what im doing
 The first task was pretty easy, first I tried around with some regex, but later i found out a simple ```find()``` did the trick. Probably a bit to complex, I might refactor the code for the sake of convenience. 
 
 There is probably a better solution for my handling with the variable ```invalid```. Couldn't think of any other solution that didn't require rewriting my entire code.
+
+The second task was pretty easy too, just added some logic behind the lowest possible values for ```minRedInt, minBlueInt, minGreenInt```

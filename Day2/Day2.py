@@ -3,6 +3,9 @@ file = open("input.txt")
 
 for line in file: 
     lineParam = line.split(": ", 1)
+    minRedInt = 0
+    minBlueInt = 0
+    minGreenInt = 0
     gameCount = lineParam[0].removeprefix("Game ")
     currentString = lineParam[1].split(";")
     invalid = 0
@@ -14,6 +17,8 @@ for line in file:
                 redInt = int(i[foundRed-3] + "" + i[foundRed-2])
             else:
                 redInt = int(i[foundRed-2])
+            if redInt > minRedInt:
+                minRedInt = redInt
 
         blueInt = 0
         foundBlue = i.find("blue")
@@ -22,6 +27,8 @@ for line in file:
                 blueInt = int(i[foundBlue-3] + "" + i[foundBlue-2])
             else:
                 blueInt = int(i[foundBlue-2])
+            if blueInt > minBlueInt:
+                minBlueInt = blueInt
 
         greenInt = 0
         foundGreen = i.find("green")
@@ -30,16 +37,13 @@ for line in file:
                 greenInt = int(i[foundGreen-3] + "" + i[foundGreen-2])
             else:
                 greenInt = int(i[foundGreen-2])
+            if greenInt > minGreenInt:
+                minGreenInt = greenInt
 
         if redInt > 12 or greenInt > 13 or blueInt > 14:
             invalid = 1
         redInt, blueInt, greenInt = 0, 0, 0
 
-    if invalid == 0:
-        print(gameCount, "is valid")
-        finalCount += int(gameCount)
-    else:
-        print(gameCount, "is not valid")
+    finalCount += (minRedInt * minBlueInt * minGreenInt)
 
 print("finalCount:", finalCount)
-    

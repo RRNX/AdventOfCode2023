@@ -22,3 +22,10 @@ The first task was pretty easy, first I tried around with some regex, but later 
 There is probably a better solution for my handling with the variable ```invalid```. Couldn't think of any other solution that didn't require rewriting my entire code.
 
 The second task was pretty easy too, just added some logic behind the lowest possible values for ```minRedInt, minBlueInt, minGreenInt```
+
+# Day 3
+This task was pretty difficult
+
+The first task was probably one of the hardest programming puzzles I've every tried to solve. I thought of doing some things with a matrix, by adding the ASCII codes from the single characters and comparing them with the wanted numbers but i couldn't quite wrap my head around it, so i just fiddled around with some string manipulation, regex search and a fair bit of logic.
+
+There is probably a way easier way to do this, but this is it.

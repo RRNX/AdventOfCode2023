@@ -29,3 +29,5 @@ This task was pretty difficult
 The first task was probably one of the hardest programming puzzles I've every tried to solve. I thought of doing some things with a matrix, by adding the ASCII codes from the single characters and comparing them with the wanted numbers but i couldn't quite wrap my head around it, so i just fiddled around with some string manipulation, regex search and a fair bit of logic.
 
 There is probably a way easier way to do this, but this is it.
+
+The part 2 was really hard. I didn't get to finish it, but will probably return at the end of AoC. For now, II'm just using a given Solution for my input, so I can at least get the star. My initial idea was to create an array for all of the ASCII codes, but the logic behind it is really complex, and currently I don't think I'm able to pull this off just jet.
